@@ -93,6 +93,50 @@ nav a {
   margin-left: 24px;
 }
 
+.header-icon,
+.header-icon a {
+  background: var(--button-color);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: 0;
+  text-decoration: none;
+}
+
+.header-icon img {
+  width: 20px;
+  height: 20px;
+  transition: box-shadow 0.22s, background 0.22s, transform 0.16s;
+  border-radius: 4px;
+}
+
+.header-icon:hover img {
+  box-shadow: 0 2px 8px rgba(87, 74, 255, 0.18);
+  background: #574aff;
+  transform: scale(1.13) rotate(-8deg);
+}
+
+.dropdown-content a {
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 3px;
+  margin-left: 24px;
+}
+
 .header-icon {
   background: var(--button-color);
   color: #fff;
@@ -106,17 +150,9 @@ nav a {
   cursor: pointer;
   transition: background 0.2s;
   padding: 0;
-}
-
-.header-icon img {
-  width: 20px;
-  height: 20px;
-}
-
-.header-icon a {
-  color: #fff;
   text-decoration: none;
 }
+
 
 /* Hero */
 /* Hero */
@@ -411,7 +447,16 @@ ol li:before {
   margin-left: 4px;
   display: inline-block;
   object-fit: cover;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.25s, background 0.25s, transform 0.18s;
+  background: #574aff;
+  padding: 4px;
+}
+
+.social-icon:hover {
+  box-shadow: 0 4px 16px rgba(87, 74, 255, 0.18), 0 2px 8px rgba(0, 0, 0, 0.18);
+  background: #3b2edb;
+  transform: translateY(-4px) scale(1.08);
+  filter: brightness(1.2);
 }
 
 .site-footer {
@@ -492,11 +537,14 @@ page footer
   background: #fff;
   border-radius: 6px;
   padding: 4px;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.25s, background 0.25s, transform 0.18s;
 }
 
 .footer-socials img:hover {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 16px rgba(87, 74, 255, 0.18), 0 2px 8px rgba(0, 0, 0, 0.18);
+  background: #574aff;
+  transform: translateY(-4px) scale(1.08);
+  filter: brightness(1.2);
 }
 
 .footer-right {
@@ -613,12 +661,14 @@ page footer
   background: #574aff;
   padding: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.2s, background 0.2s;
+  transition: box-shadow 0.25s, background 0.25s, transform 0.18s;
 }
 
 .sticky-socials img:hover {
-  background: #3b2edb;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 16px rgba(87, 74, 255, 0.18), 0 2px 8px rgba(0, 0, 0, 0.18);
+  background: #574aff;
+  transform: translateY(-4px) scale(1.08);
+  filter: brightness(1.2);
 }
 
 /* Small screen
